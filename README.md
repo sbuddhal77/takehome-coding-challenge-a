@@ -14,7 +14,7 @@ Open a browser and type http://localhost:8000
 
 To open this site on a public hosted server, please click on below link
 
-
+https://ey-acquisition-portal-sreeni.herokuapp.com
 
 Implementation Details:
 
