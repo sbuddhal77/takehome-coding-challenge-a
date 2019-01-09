@@ -18,6 +18,9 @@
     "angular-route": "1.7.x",
     "angular-sanitize": "^1.7.5",
     "angular-ui-bootstrap": "^2.5.6",
+    "angular-mocks": "1.7.x",
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1",
     "bootstrap": "^3.3.7",
     "chart.js": "^2.7.3",
     "express": "^4.16.4",
@@ -25,9 +28,7 @@
     "mdbootstrap": "^4.6.1"
   },
   "devDependencies": {
-    "angular-mocks": "1.7.x",
-    "cpx": "^1.5.0",
-    "http-server": "^0.11.1",
+    
     "jasmine-core": "^3.3.0",
     "karma": "^3.1.1",
     "karma-chrome-launcher": "^2.2.0",
@@ -49,6 +50,10 @@
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js"
+  },
+   "engines": {
+    "node": "8.9.4",
+    "npm": "6.5.0"
   },
   "keywords": [
     "EY",
