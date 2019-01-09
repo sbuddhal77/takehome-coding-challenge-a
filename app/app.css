@@ -1,0 +1,195 @@
+html{
+  height:100%;
+}
+body{
+  margin : 0;
+  font-family: "Lato", sans-serif;
+}
+
+table{
+  transition: all 0.35s;
+}
+
+a span{
+  font-weight: bold;
+  font-style : italic;
+  font-size : 15px;
+  
+  text-decoration-color: #ffe600;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+div.main_links
+{
+  border-radius: 5%;
+  padding-bottom: 200px;
+  display: inline-block;
+
+}
+
+a:hover{
+  color: #ffe600;
+}
+a:active{
+  color: #999999;
+}
+
+hr{
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-width: 5px solid yellow;
+}
+
+a#target_link
+{
+  
+  font-size : 20px;
+}
+
+a#analytics_link
+{
+  
+  font-size : 20px;
+}
+
+.status_green{
+  color : green;
+
+}
+.status_red{
+  color : red;
+
+}
+
+.status_yellow{
+  color : rgb(143, 143, 11);
+}
+
+/*side bar */
+.col-2.side {
+  -ms-flex: 10%; 
+  /*flex: 15%;*/
+  background-color: #dfdbab;
+  padding: 20px;
+}
+
+/* Main body */
+.col-10.main {   
+  -ms-flex: 80%; 
+  /*flex: 75%;*/
+  background-color: rgb(157, 182, 156);
+  padding: 20px;
+}
+
+h3,h5{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.head_pop_links
+{
+  text-decoration: underline;
+  color : #4c4d79;
+
+}
+
+a{
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popular_links{
+  display: inline-flex;
+  border : 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+/*Search box */
+.search-form .form-group {
+  float: left !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(251, 255, 194);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #999999;
+}
+
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media (min-width: 1400px){
+
+  .my-bar-chart .modal-lg {
+      width: 1000px;
+  }       
+
+}
+
+/*Responsive breakpoint. This makes the side bar to span to full width and table/graphs/charts displayed below when screen width is 768px */
+@media screen and (max-width: 768px) {
+  .row {   
+    flex-direction: column;
+  }
+  .col-2.side{
+    width : 100%;
+  }
+  .col-10.main{
+    width : 100%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

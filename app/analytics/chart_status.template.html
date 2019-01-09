@@ -1,0 +1,46 @@
+<h3> EY Target Acquisition Analytics </h3>
+<hr>
+<div class="form-group">
+
+        <div class = "row">
+
+            <div class = "col-md-5">
+                
+                <a href="" class="btn btn-cabaret btn-lg" ng-click = "status_chart()"><span>Pie Chart By Status </span>
+            
+                    <i class="glyphicon glyphicon-stats"></i>
+                
+                </a>
+            </div>
+
+            <div class = "col-md-5">
+                    <a href="" class="btn btn-cabaret btn-lg" ng-click = "bar_chart()"><span>Bar Chart By Revenue </span>
+            
+                        <i class="glyphicon glyphicon-stats"></i>
+                    
+                    </a>
+            </div>
+        </div>
+  
+        
+</div>
+
+<div class = "container" id = "pie_chart_id" ng-show = "show_status == 1">
+
+     <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options_pie"
+     chart-colors = "colorsPie">
+     
+    </canvas> 
+
+
+</div>
+
+
+<div class = "container" id = "bar_chart_id" ng-show = "show_status == 0">
+
+     
+        <canvas id="bar" class="chart chart-bar"   chart-data="data" chart-labels="labels" chart-series="series"
+        chart-colors="colorsBar" chart-options = "options_bar">
+        </canvas>
+
+</div>

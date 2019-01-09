@@ -1,0 +1,64 @@
+{
+  "name": "ey-target-tracker",
+  "version": "1.0.0",
+  "description": "\"EY Target Acquisition Portal\"",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbuddhal77/takehome-coding-challenge-a.git"
+  },
+  "dependencies": {
+    "angular": "1.7.x",
+    "angular-animate": "1.7.x",
+    "angular-bootstrap": "^0.12.2",
+    "angular-chart": "^0.5.0",
+    "angular-chart.js": "^1.1.1",
+    "angular-filter": "^0.5.17",
+    "angular-resource": "1.7.x",
+    "angular-route": "1.7.x",
+    "angular-sanitize": "^1.7.5",
+    "angular-ui-bootstrap": "^2.5.6",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.7.3",
+    "express": "^4.16.4",
+    "jquery": "3.3.x",
+    "mdbootstrap": "^4.6.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.7.x",
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2",
+    "protractor": "^5.4.1"
+  },
+  "scripts": {
+    "postinstall": "npm run copy-libs",
+    "update-deps": "npm update",
+    "postupdate-deps": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{chart*,mdboot*,angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
+    "prestart": "npm install",
+    "start": "node server.js",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "npm test -- --single-run",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js"
+  },
+  "keywords": [
+    "EY",
+    "Target",
+    "Acquisition"
+  ],
+  "author": "Sreenivasulu Buddhala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbuddhal77/takehome-coding-challenge-a/issues"
+  },
+  "homepage": "https://github.com/sbuddhal77/takehome-coding-challenge-a#readme"
+}

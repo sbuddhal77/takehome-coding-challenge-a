@@ -1,0 +1,8 @@
+[ 
+    { "company_id": 0, "status": "Researching", "companyInfo": "Comp1", "keyContacts": "Alice: 809123, Bob: 123514", "financialPerformance": [{"Year":"2015", "Revenue": 14000} , {"Year":"2016", "Revenue": 21000} , {"Year":"2017", "Revenue": 16000},{"Year":"2018", "Revenue": 13000} ]},
+    { "company_id": 1, "status": "Pending Approval", "companyInfo": "Comp2", "keyContacts": "John: 897523, Nate: 234525", "financialPerformance": [{"Year":"2015", "Revenue": 25000} , {"Year":"2016", "Revenue": 18000} , {"Year":"2017", "Revenue": 31000},{"Year":"2018", "Revenue": 40000} ] },
+    { "company_id": 2, "status": "Researching", "companyInfo": "Comp3", "keyContacts": "Carol: 234509, Devon: 890324", "financialPerformance": [{"Year":"2015", "Revenue": 10000} , {"Year":"2016", "Revenue": 14000} , {"Year":"2017", "Revenue": 15000},{"Year":"2018", "Revenue": 23000} ] },
+    { "company_id": 3, "status": "Approved", "companyInfo": "Comp4", "keyContacts": "Mary: 234589, Helen: 123519", "financialPerformance": [{"Year":"2015", "Revenue": 14000} , {"Year":"2016", "Revenue": 32000} , {"Year":"2017", "Revenue": 16000},{"Year":"2018", "Revenue": 22000} ]},
+    { "company_id": 4, "status": "Declined", "companyInfo": "Comp5", "keyContacts": "Carol: 234509, Devon: 890324", "financialPerformance": [{"Year":"2015", "Revenue": 13000} , {"Year":"2016", "Revenue": 30000} , {"Year":"2017", "Revenue": 17000},{"Year":"2018", "Revenue": 21000} ]},
+    { "company_id": 5, "status": "Approved", "companyInfo": "Comp6", "keyContacts": "Mary: 234589, Helen: 123519", "financialPerformance": [{"Year":"2015", "Revenue": 12000} , {"Year":"2016", "Revenue": 21000} , {"Year":"2017", "Revenue": 18000},{"Year":"2018", "Revenue": 19000} ]}
+]

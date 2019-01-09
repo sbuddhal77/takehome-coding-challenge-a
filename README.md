@@ -1,66 +1,27 @@
-# Take-Home Coding Challenge for Front End Developer
+# EY-Target-Acquisition
+Steps to run this app
 
-Thanks for taking the time to work on this take-home coding challenge.
+1. fork this project from git
+2. use any IDE to open the source code
+3. Make sure latest version of npm is installed
+4. run below command to start the app
 
-## Timing
+  npm run
 
-Please complete and submit your work within 3 days.
+This will take a while to complete (it install all libraries defined in package.json and run some post install updates). After successful installation of node packages, you will be see a message saying http server is running on localhost@8000.
 
-## Business Problem
+Open a browser and type http://localhost:8000
 
-A company is looking to achieve inorganic growth through acquisitions. They have asked us to develop an online tool to track and analyze potential target companies.
+To open this site on a public hosted server, please click on below link
 
-## Requirements:
 
-Your finish product should be client ready.
 
-You can be as creative as you want but at the bare minimum your prototype should allow the client to perform the following activities:
+Implementation Details:
 
-- View a list of targets
-- Edit an exising target
-- Create a new target
-- Delete a target
-
-## Assumptions
-
-- Please use either Angular (Preferred) or React
-- Feel free to use any CSS framework or 3rd party JS library to extend your app
-- Focus on making the application configurable and add any charts/analytics you like
-- Demonstrate use of web standards and best practices.
-- Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width).
-- Data does not need to be persisted (please generate and use your own mock data)
-- Examples of data to be captured:
-  - Status (e.g. researching, pending approval, approved, declined)
-  - Company Info
-  - Key Contacts
-  - Financial Performance
-
-## Bonuses (only if you have time)
-
-- Use SASS or LESS to pre-compile your CSS.
-- Add a CSS animation with transitions.
-- Add unit tests
-- Using EY Color Palette:
-  - #333333
-  - #ffe600
-  - #ffffff
-  - #cccccc
-  - #999999
-
-## Documentation:
-
-Please modify README.md to add:
-
-1. instructions on how to build/run your application
-2. link to the live site
-3. A paragraph or two about what you are particularly proud of in your implementation, and why.
-
-## Submission Guidelines
-
-1. Fork this project on github. You will need to create an account if you don't already have one.
-2. Complete the project as described below within your fork.
-3. Push all of your changes to your fork on github and submit a pull request.
-4. Publish your application to a live site.
-5. You should email your recruiter to let them know you had submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests).
-
-Thank you and good luck!
+1. I designed the app keeping the modularity, usability and enhancibility in mind
+2. I ensured that each of the functionalities were created as a Angular components so that these components can be reused anywhere just by injecting dependency on it. I am particularly proud of this way of design
+3. I have modal window/pop-up UI component for allowing users to edit target. This is good from user experience point of view
+4. I have depicted Financial Performance of a company graphically. I have provided users to navigate to a pop-up window which has graphical representation(bar-chart) of financial performance of a company. I am proud of having a nice view upon a user click from a tabular data
+5. I have designed a web page layout that has a header, sidebar & main body. I designed this app to be a single app through the usage of router module in angularjs. I am proud of designing this to be a single page app
+6. I am particularly proud of having 3 different graphical representations of target list data
+7. I am proud of using animations(transitions) and EY color palettes. Moreover have managed to write few unit test cases

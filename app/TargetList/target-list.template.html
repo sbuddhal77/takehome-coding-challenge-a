@@ -1,0 +1,71 @@
+<div class = "main">
+
+        <div class="container">
+            
+                <div class = "row">
+                    <div class = "col-md-3">
+                        <span>Search</span>
+                    </div>
+                </div>
+
+
+                <div id="search_box" class="row">
+                    <div class="col-md-3">
+                        <form action="" class="search-form">
+                            <div class="form-group has-feedback">
+                                <label for="search" class="sr-only">Search</label>
+                                <input type="text" class="form-control" ng-model="search_comp" name="search" id="search" placeholder="company name">
+                                  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+    <div class = "table-responsive">
+     
+
+        <table id="mytable" class="table table-bordred table-striped table-hover" cellpadding="0" cellspacing = "0">
+            <caption>
+                
+            </caption>
+                <thead class = "thead-light">
+                    <th scope = "col">Company ID</th>
+                    <th scope = "col">Target Company Name</th>
+                    <th scope = "col">Status</th>
+                    <th scope = "col">Key Contacts</th>
+                    <th scope = "col">Financial Performance</th>
+                    <th scope = "col">Edit</th>
+                    <th scope = "col">Delete</th>
+                </thead>
+                <tbody ng-repeat = "t in $ctrl.targets.data | filter:search_comp"> 
+                 
+
+                    <tr class = "table-info">
+                       
+                        <td>{{t.company_id}}</td>
+                        <td>{{t.companyInfo}}</td>
+                        <td ng-class = "t.status=='Declined' ? 'status_red': t.status == 'Approved' ? 'status_green':'status_yellow'">{{t.status}}</td>
+                        <td>{{t.keyContacts}}}</td>
+                        
+                        <td><a href = "#" ng-click="$ctrl.view($index)">View</a></td>
+                        <td>
+                            <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                <button class="btn btn-primary btn-xs" ng-click = "$ctrl.edit($index)" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button>
+                            </p>
+                        </td>
+                        <td>
+                            <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                <button class="btn btn-danger btn-xs" ng-click = "$ctrl.remove($index)" ><span class="glyphicon glyphicon-trash"></span></button>
+                            </p>
+                        </td>
+                    </tr>
+
+                    
+                </tbody>
+
+            </table>
+
+        </div>
+</div>
+
